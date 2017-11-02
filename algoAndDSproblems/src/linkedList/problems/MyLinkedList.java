@@ -1,8 +1,5 @@
 package linkedList.problems;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Created by parasuram on 19/10/17
  */
@@ -127,7 +124,7 @@ public class MyLinkedList<T> {
         Node<T> tortoise = root;
         Node<T> rabbit = root.next.next;
 
-        while (tortoise != null && rabbit != null && rabbit.next != null && rabbit.next.next != null) {
+        while (rabbit.next != null && rabbit.next.next != null) {
 
             if (tortoise.value == rabbit.value) {
 
